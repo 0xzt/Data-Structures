@@ -1,3 +1,3 @@
-This class project entailed programming a system for a book store. You will see some .java files as well as some.txt files.
-The text files are in place to show the instructions for the week, as well as, summary that we had for the week.
-The .java files will show the following code for the book and student codes.
+This class project entailed programming a system for a book store. You will see some ".java" files as well as some ".txt" files.
+The ".txt" files are in place to show the instructions for the week, as well as, summary that we had for the week.
+The ".java" files will show the following code for the book and student codes.
