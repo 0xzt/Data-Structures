@@ -1,5 +1,7 @@
-An Executive Summary provides a high-level overview of the project-to-date including; results, conclusions, and recommendations. 
-These summaries are written for executives who do not have time to read a detailed report, but need to cover the major points of a project 
+An Executive Summary provides a high-level overview of the project-to-date including; results, 
+conclusions, and recommendations. 
+These summaries are written for executives who do not have time to read a detailed report, but need to cover the major 
+points of a project 
 in order to understand the substance.
 
 This week you are to create a final report that includes an Executive Summary.
@@ -12,9 +14,14 @@ An 8- to 10-slide Microsoft® PowerPoint® presentation with speaker notes
 
 Your final project is to include the following:
 Executive Summary
-A Comprehensive Task List showing a high-level overview of the project and project-to-date results to provide an introduction for Executives
-The Week Two Assignment Deliverable: The abstract data type algorithm headers for the inventory system, including: name, parameters, purpose, 
-preconditions, post conditions, return value types, and the pseudocode definitions for a textbook data structure and a student data structure
-The Week Three Assignment Deliverable: The recursive pseudocode algorithm which looks for specific text within all textbooks located in a library.
-The Week Four Assignment Deliverable: The document explaining sort priorities, including: the list of character sort strings, numerical data searches, arrays, subarrays, normalization database link revisions, and Pivindex
+A Comprehensive Task List showing a high-level overview of the project and project-to-date results to provide an 
+introduction for Executives
+The Week Two Assignment Deliverable: The abstract data type algorithm headers for the inventory system, 
+including: name, parameters, purpose, 
+preconditions, post conditions, return value types, and the pseudocode definitions for a textbook data 
+structure and a student data structure
+The Week Three Assignment Deliverable: The recursive pseudocode algorithm which looks for specific text within 
+all textbooks located in a library.
+The Week Four Assignment Deliverable: The document explaining sort priorities, including: the list of character 
+sort strings, numerical data searches, arrays, subarrays, normalization database link revisions, and Pivindex
 The conclusion and recommendations going forward with the project
