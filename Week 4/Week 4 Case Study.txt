@@ -1,0 +1,27 @@
+import java.util.Arrays;
+static void sortString(String str) { 
+        char []arr = str.toCharArray(); 
+        Arrays.sort(arr); 
+        System.out.print(String.valueOf(arr)); 
+    } 
+Search options include (in this order)  [Examples]
+String search title  [Efficient runtime metaprogramming services for Java]
+String search author  [Lagartos, Ignacio, Redondo, Jose Manuel, Ortin, Francisco]
+Array search ISBN number  [0164-1212]
+String search subject  [Computer programming, Virtual machine systems, Java (Computer program language), Source code]
+String search publisher  [Journal of Systems & Software]
+Array search date of publication  [07.2019]
+String search location  [University of Oviedo, Computer Science Department, Calvo Sotelo s/n, Oviedo 33007, Spain
+String search Dewey decimal code  [10.1016/j.jss.2019.04.030]
+  
+    Search strings priorities were selected based on their probability of being searched upon. The four most common search item would be title, 
+    author, ISBN and subject. First, the entire title or smaller portions of the title could be searched against while looking for a specific 
+    book or one that includes the search contents within the title of the article.  Second most searched item could be the author or authors. 
+    Again, entire author names or individual names, or portions of a name could be used to search for items written by a specific author or set 
+    of authors. Third, ISBN number can be searched as just an array of numbers by omitting the hyphen from the search and database storage. 
+    The last most commonly searched option could be subject. Typically, this is set of multiple subjects on which the book or item is written 
+    about. Searches could be made by either a portion of the subject, or by selecting a pre-selected list of subjects. The less common search 
+    options would include publisher, date of publication, location, and Dewey decimal code. The publisher could be searched in whole or by a 
+    portion of the publisher’s name. The date of publication can be stored as a date code, and as such, not require a string search. Location 
+    would pertain to the physical location where the book or article is normally checked in. This could be searched by name, city, state or 
+    country. Finally, the Dewey decimal code, a less common way to search when compared to ISBN. This would normally be location specific, however.

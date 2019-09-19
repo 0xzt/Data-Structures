@@ -1,0 +1,10 @@
+Week 4 Instructions:
+
+This week, your team is to create a document to show sort priorities. Your summary should explain sort priorities and where the likely targets of best allocation of software time can be spent.
+
+Create a 1-page summary of best options to sort and search through a University's library catalogs, lists, and databases.
+
+Include the following in your summary:
+List of the character sort strings and numerical data searches
+Arrays, subarrays, and where normalization database links may need to be revised
+Pivindex

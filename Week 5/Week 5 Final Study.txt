@@ -1,0 +1,97 @@
+Executive Summary
+The University bookstore brought in our team to design a new inventory system. This project was intended to support the following functionality:
+-	Ordering textbooks
+-	Receiving textbooks
+-	Determining retail price and pricing used textbooks
+-	Determining quantity on hand
+-	Recording textbook sales and textbook returns
+As part of this project, these tasks have been completed thus far. Details specific to each stage has been outlined in more details in the following pages.
+Week 2
+-	Developed a pseudocode definition for a textbook data structure
+-	Developed a pseudocode definition for a student data structure
+Week 3
+-	Developed a recursive pseudocode algorithm that looks for specific text within all textbooks located in a library including; each textbook title string, each chapter title string, each paragraph string, etc.
+Week 4
+-	Created a document to show sort priorities explaining sort priorities and where the likely targets of best allocation of software time can be spent.
+
+At this time, it is recommended that the development team create a temporary database for further testing. This database would allow for loading book, student and search data that would allow for real world testing. Temporary data should not only include fields in book and student structures, but should also include textbook data that are both full and partial for testing the search and sort priorities.
+ 
+Week 2 Deliverables
+
+Student
+    private int customerId; //Student/customer ID number
+    private String firstName; //First Name
+    private String lastName; //Last Name
+    private String address1; //Address 1
+    private String address2; //Address 2 - Apt#, Building#, etc...
+    private String city; //Address city
+    private String state; //Address state
+    private String zip; //Address zip
+    private String deliveryPreference; //Delivery preference - 1 = USPS, 2 = FedEx, 3 – UPS
+    private int[] orders; //Array of order numbers related to purchases
+
+Book
+    private int isbn; //Book identifier
+    private String title; //Title of the book
+    private int stock; //Quantity in stock
+    private double price; //Sale price
+    private int totalSold; //Number of copies sold
+    private int totalReturned; //Number of copies returned
+    private int sku; //Book barcode
+    private int quality; //Quality of the book (1 = poor, 5 = new)
+ 
+Week 3 Deliverables
+
+public static <T> boolean isStringInBook(String searchText, T data) {
+     boolean hasText = false;
+
+      if (data EoF) {
+return hasText=false;
+     }
+     if (data instanceof Book) {
+if (((Book) data).getTitle().toLowerCase().contains(searchText.toLowerCase())) {
+hasText = true;
+     	} else {
+String[] chapters = ((Book) data).getChapters();
+for (String chapter : chapters) {
+                		if (isStringInBook(searchText, chapter)) {
+                    			hasText = true;
+                 		}
+           		}
+}
+    } else {
+String[] paragraphs = ((Book) data).getParagraphs ();
+          	for (String paragraph : paragraphs) {
+            	if (isStringInBook(searchText, paragraph)) {
+                    		hasText = true;
+                 	}
+           	}
+   } else {
+    	if (data.toString().toLowerCase().contains(searchText.toLowerCase())) {
+   		hasText = true;
+        	}
+   }
+   return hasText;
+}
+ 
+
+Week 4 Deliverables
+
+import java.util.Arrays;
+static void sortString(String str) { 
+        char []arr = str.toCharArray(); 
+        Arrays.sort(arr); 
+        System.out.print(String.valueOf(arr)); 
+    } 
+Search options include (in this order)  [Examples]
+String search title  [Efficient runtime metaprogramming services for Java]
+String search author  [Lagartos, Ignacio, Redondo, Jose Manuel, Ortin, Francisco]
+Array search ISBN number  [0164-1212]
+String search subject  [Computer programming, Virtual machine systems, Java (Computer program language), Source code]
+String search publisher  [Journal of Systems & Software]
+Array search date of publication  [07.2019]
+String search location  [University of Oviedo, Computer Science Department, Calvo Sotelo s/n, Oviedo 33007, Spain
+String search Dewey decimal code  [10.1016/j.jss.2019.04.030]
+
+	Search strings priorities were selected based on their probability of being searched upon. The four most common search item would be title, author, ISBN and subject. First, the entire title or smaller portions of the title could be searched against while looking for a specific book or one that includes the search contents within the title of the article.  Second most searched item could be the author or authors. Again, entire author names or individual names, or portions of a name could be used to search for items written by a specific author or set of authors. Third, ISBN number can be searched as just an array of numbers by omitting the hyphen from the search and database storage. The last most commonly searched option could be subject. Typically, this is set of multiple subjects on which the book or item is written about. Searches could be made by either a portion of the subject, or by selecting a pre-selected list of subjects.
+	The less common search options would include publisher, date of publication, location, and Dewey decimal code. The publisher could be searched in whole or by a portion of the publisher’s name. The date of publication can be stored as a date code, and as such, not require a string search. Location would pertain to the physical location where the book or article is normally checked in. This could be searched by name, city, state or country. Finally, the Dewey decimal code, a less common way to search when compared to ISBN. This would normally be location specific, however.

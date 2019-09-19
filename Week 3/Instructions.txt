@@ -1,0 +1,7 @@
+Week 2 Instructions:
+
+Using the scenario from Week Two, develop a recursive pseudocode algorithm.
+
+The algorithm should look for specific text within all textbooks located in a library including; each textbook title string, each chapter title string, each paragraph string, etc.
+
+Submit your assignment.

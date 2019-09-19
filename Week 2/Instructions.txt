@@ -1,0 +1,16 @@
+Week 2 Instructions:
+
+The University bookstore hired your Learning Team to design a new textbook inventory system, including the following major processes:
+Ordering textbooks
+Receiving textbooks
+Determining retail price and pricing used textbooks
+Determining quantity on hand
+Recording textbook sales and textbook returns
+
+Create a 2-page document that summarizes the abstract data type algorithm headers for your textbook inventory system.
+
+Write the abstract data type algorithm headers for the inventory system above. Each header should include name, parameters, purpose, preconditions, post conditions, and return value types. You may add additional algorithms as required by your analysis.
+
+Include the following:
+a pseudocode definition for a textbook data structure
+a pseudocode definition for a student data structure
